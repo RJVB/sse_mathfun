@@ -1337,7 +1337,7 @@ static inline double scalCumSumSumSq( double *xa, int n, double *sumSQ )
  		return _mm_and_pd(a, *((v2df*)&am1) );
  	}
 	static inline double _mm_abs_sd( double a )
-	{ const static uint64 am2 = 0x7fffffffffffffffLL;
+	{ const static unsigned long long am2 = 0x7fffffffffffffffLL;
 	  const v4si am1 = _mm_set_epi32(0x7fffffff,0xffffffff,0x7fffffff,0xffffffff);
 	  v2si r = _mm_and_si64( *((v2si*)&a), *((v2si*)&am1) );
 		_mm_empty();
