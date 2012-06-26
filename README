@@ -4,7 +4,7 @@ Inspired by Intel Approximate Math library, and based on the corresponding algor
 
 The default is to use the SSE1 version. If you define USE_SSE2 the the SSE2 intrinsics will be used in place of the MMX intrinsics. Do not expect any significant performance improvement with SSE2.
 
-Copyright (C) 2010,2011  RJVB - extensions to support 64bit doubles and SSE3,4 . Some SSE4 intrinsics allow considerable gain over the standard functions (floor, ceil, round, ...).
+Copyright (C) 2010,2011  RJVB - extensions to support 64bit doubles and SSE3,4 . Some SSE4 intrinsics allow considerable gain over the standard functions (floor, ceil, round, ...). "Stub" macros allow to use SSE intrinsics even when not compiling with SSE support. Less elegant than runtime checking but probably faster.
 
 Copyright (C) 2007  Julien Pommier
 
