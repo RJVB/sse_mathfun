@@ -112,6 +112,10 @@ benching               log_ps .. ->   10.4 millions of vector evaluations/second
 */
 
 #include <stdio.h>
+#include "Macros.h"
+
+IDENTIFY("sse_mathfun test suite");
+
 #include <xmmintrin.h>
 
 /* useful when debuggin.. */
