@@ -49,7 +49,7 @@
 #		define USE_SSE2
 #		define USE_SSE3
 #	endif
-#	if defined(__SSE4__) || defined(__SSE4_1__) || defined(__SSE4_2__) || (_M_IX86_FP > 1)
+#	if defined(__SSE4__) || defined(__SSE4_1__) || defined(__SSE4_2__) || ((_M_IX86_FP > 1) && !defined(_M_AMD64))
 #		if defined(__GNUC__)
 #			warning "USE_SSE4"
 #		endif
