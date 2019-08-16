@@ -330,9 +330,9 @@ static inline v4sf log_ps(v4sf x)
 	  v4sf z, y;
 	  v4sf mask = _mm_cmplt_ps(x, *(v4sf*)_ps_cephes_SQRTHF);
 	  v4sf tmp = _mm_and_ps(x, mask);
-	  x = _mm_sub_ps(x, one);
 	  e = _mm_sub_ps(e, _mm_and_ps(one, mask));
 	  x = _mm_add_ps(x, tmp);
+	  x = _mm_sub_ps(x, one);
 
 
 	  z = _mm_mul_ps(x,x);
